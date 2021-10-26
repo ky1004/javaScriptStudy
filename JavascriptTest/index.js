@@ -1,0 +1,1 @@
+document.write("js 잘 연결되었습니다<br>");
