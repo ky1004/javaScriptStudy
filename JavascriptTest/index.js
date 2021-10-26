@@ -1,50 +1,78 @@
-// 함수의 선언, 매개변수 a
-function makeAlt(a){
-    alert(a);
+/* if문 */
+var count = 1;
+if(count==0){
+    alert('if : ' + count);
+}else if(count==1){
+    alert('else if : ' + count);
+}else{
+    alert('else : ' + count);
 }
 
-/* 방법 1 */
-makeAlt("hi");
-/* 방법 2 */
-makeAlt("Hello");
-/* 방법 3 */
-var a = "hello";
-makeAlt(a);
+/* case문 */
+var num = prompt("숫자를 입력하세요.","");
+switch(num){
+    case "1": alert("One");
+        break;
+    case "2": alert("Two");
+        break;
+    case "3": alert("Three");
+        break;
+    case "4": alert("Four");
+        break;
+    case "5": alert("Five");
+        break;
+    default : alert("I don't know")
+}
 
-/*
+/* for문 */
+var sum = 0;
+for( var a=1; a<=100; a=a*2){
+    sum+=a;
+}
+document.write("for문 합계 : " + sum + "<br>");
 
-[ 산술 연산자 ]
- +, -, *, /, %
+/* while문 */
+var pls = 2;
+while(pls==9){
+    document.write(pls+"<br>");
+    pls+=1;
+}
+document.write("while문 합계 : "+pls+"<br>");
 
-[ 문자열 겹합 연산자 ]
-
-"가나다" + "ABC" = "가나다ABC"
-문자 + 문자 --> 문자
-문자 + 숫자 --> 문자
-숫자 + 문자 --> 문자
-숫자 + 숫자 --> 숫자(덧셈)
-
-[ 비교 연산자 ]
->, <, >=, <=, ==, ===, !=, !==
-
-==와 ===의 차이는 ===는 타입까지 일치하는지 검증한다는 것임
-!=과 !==도 동일하다
-
-[ 논리 연산자 ]
-&& and, || or, ! not
-
-[ 조건(삼항) 연산자 ]
-조건식 ? 값1 : 값2
-조건식이 참이라면 값1 그렇지 않다면 값2를 가지게 된다
-
-[ 대입 연산자 ]
-=, +=, -=, *=, /=, %=
-
-[ 증감 연산자 ]
-++, --
-
-
-*/
+/* do while문 */
+var pls2 = 2;
+do{
+    document.write(pls2+"<br>");
+    pls2+=1;
+}while(pls2==9)
+document.write("while문 합계 : "+pls2+"<br>");
 
 
+/* break, continue */
+// var sum=0, sum2=0, sum3=0;
+// for(var i=1; i<=100; i++){
+//     if(i%2!=0){
+//         continue;
+//     }
+//     sum += i;
+// }
+// document.write("짝수의 합은 : " + sum + "<br><br>");
 
+// for(var y=1; y<=100; y++){
+//     sum2 += y;
+//     if(sum2>=2000){
+//         document.write("sum2 변수가 2000이상이 되는 순간 : " + sum2 + "<br><br>");
+//         break;
+//     }
+// }
+
+// var k = 0;
+// for(; ;){
+//     k=prompt("값 입력","");
+//     k*=1;
+//     sum3+=k;
+//     if(k=0){
+//         break;
+//     }
+//     document.write("누적 값 : " +sum3);
+// }
