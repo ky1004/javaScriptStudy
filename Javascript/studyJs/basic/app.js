@@ -16,10 +16,10 @@ let myName = "hina";
 console.log(a + b);
 console.log(a * b);
 console.log(a / b);
-console.log("hello "+myName);
+console.log("hello " + myName);
 
 myName = "Hina"
-console.log("hello "+myName);
+console.log("hello " + myName);
 
 // const와 let의 차이
 // const는 값이 바뀔 수 없다는 것
@@ -41,7 +41,14 @@ const amIFat = true;
 let something;
 
 console.log(amIFat);
-console.log(something); // undefined: 변수(variable)는 존재하는데 정의되지 않은 것
+console.log(something);
+// undefined: 변수(variable)는 존재하는데 정의되지 않은 것
 
 //------------------------------------------------------------------------------
 
+// array
+const dayWeek = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+// const nonsense = [1, 2, "hello", false, null, true, undefined]
+
+// console.log(dayWeek, nonsense);
+console.log(dayWeek);
