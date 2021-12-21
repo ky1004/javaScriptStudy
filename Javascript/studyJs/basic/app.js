@@ -1,3 +1,5 @@
+/*
+
 // alert("hi");
 
 // variable을 만들기 위해서는 가장 먼저 const라는 걸 사용
@@ -46,9 +48,47 @@ console.log(something);
 
 //------------------------------------------------------------------------------
 
-// array
+// array : 하나의 variable 안에 데이터의 lisy를 가지는 것
 const dayWeek = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
 // const nonsense = [1, 2, "hello", false, null, true, undefined]
 
 // console.log(dayWeek, nonsense);
 console.log(dayWeek);
+console.log(dayWeek[4]); // friday
+
+// add more day to the array
+dayWeek.push("sun")
+console.log(dayWeek);
+
+*/
+
+// const playerName = "Hina";
+// const playerScore = 1300;
+// const playerLogin = false;
+// const playerFat = "little bit";
+
+// player.name
+// player.score
+// player.login
+
+// const player = ["Hina", 1300, false, "little bit"]
+
+// 많은 variable을 만드는 방법보다 더 좋은 방법을 써야한다
+// object
+const player = {
+    name: "hina",
+    score: 1000,
+    fat: true,
+};
+
+console.log(player);
+console.log(player.fat);
+
+// const되어있는 player 자체를 업데이트 할 수는 없지만
+// 그 안의 내용물은 업데이트 할 수 있다
+player.fat = false;
+console.log(player.fat);
+
+// 원한다면 어떠한 property든 만들 수 있다
+player.handSome = "Yes";
+console.log(player);
