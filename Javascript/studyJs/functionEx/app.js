@@ -34,3 +34,12 @@ const player = {
 
 console.log(player.name);
 player.hello("Mongsi");
+
+
+// const는 업데이트를 못하게 한다
+// let은 variable업데이트 가능
+// var는 사용하지 말아야 한다(오래된 자바스크립트)
+// 항상 const, 가끔 let
+let FatReal = true;
+FatReal = false;
+
