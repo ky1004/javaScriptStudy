@@ -43,3 +43,46 @@ player.hello("Mongsi");
 let FatReal = true;
 FatReal = false;
 
+const toBuy = ["potato", "tomato", "pizza"];
+console.log(toBuy);
+toBuy[2] = "water";
+console.log(toBuy);
+toBuy.push("meat");
+console.log(toBuy);
+
+const otherplayer = {
+    name: "lemon",
+    age: 38,
+}
+console.log(otherplayer);
+otherplayer.name = "reon";
+console.log(otherplayer);
+otherplayer.strong = "true";
+console.log(otherplayer);
+
+function add(potato, kimchi) {
+    console.log(potato + kimchi);
+}
+add(10, 15);
+add(1.3, 3800);
+add(98, 3.2);
+
+const calculator = {
+    add: function (a, b) {
+        console.log(a + b);
+    },
+    sub: function (a, b) {
+        console.log(a - b);
+    },
+    mul: function (a, b) {
+        console.log(a * b);
+    },
+    div: function (a, b) {
+        console.log(a / b);
+    },
+};
+
+calculator.add(5, 2);
+calculator.sub(5, 2);
+calculator.mul(5, 2);
+calculator.div(5, 2);
