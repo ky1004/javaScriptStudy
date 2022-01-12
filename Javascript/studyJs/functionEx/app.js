@@ -69,20 +69,18 @@ add(98, 3.2);
 
 const calculator = {
     add: function (a, b) {
-        console.log(a + b);
+        return (a + b);
     },
     sub: function (a, b) {
-        console.log(a - b);
+        return (a - b);
     },
     mul: function (a, b) {
-        console.log(a * b);
+        return (a * b);
     },
     div: function (a, b) {
-        console.log(a / b);
+        return (a / b);
     },
 };
 
-calculator.add(5, 2);
-calculator.sub(5, 2);
-calculator.mul(5, 2);
-calculator.div(5, 2);
+const resultValue = calculator.add(4, 3);
+console.log("더한 값 : " + resultValue);
