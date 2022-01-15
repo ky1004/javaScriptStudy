@@ -21,9 +21,22 @@ else {
 }
 */
 
+console.log("=== if문 ===")
 if (isNaN(age) == true) {
-    console.log("숫자가 아닙니다.");
+    console.log("숫자가 아닙니다. 숫자를 입력해주세요.");
+}
+else if (age <= 0 || isNaN(age)) {
+    console.log("예외입니다.");
+}
+else if (age < 19) {
+    console.log("성인이 아닙니다.");
+}
+else if (age >= 19 && age <= 50) {
+    console.log("술을 마실 수 있는 나이입니다.");
+}
+else if (age > 50 && age <= 80) {
+    console.log("음주 대신 운동을 하십시오.");
 }
 else {
-    console.log("숫자입니다.");
+    console.log("무엇이든 잘 될 것입니다.");
 }
