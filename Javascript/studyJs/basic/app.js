@@ -75,6 +75,7 @@ console.log(dayWeek);
 
 // 많은 variable을 만드는 방법보다 더 좋은 방법을 써야한다
 // object
+/*
 const player = {
     name: "hina",
     score: 1000,
@@ -92,3 +93,12 @@ console.log(player.fat);
 // 원한다면 어떠한 property든 만들 수 있다
 player.handSome = "Yes";
 console.log(player);
+*/
+
+// HTML을 JS에서 가지고 올 수 있다
+const title = document.getElementById("title");
+// console.dir(title);
+title.innerText = "Catch you!"
+
+console.log(title.id);
+console.log(title.className);
