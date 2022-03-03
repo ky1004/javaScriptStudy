@@ -102,3 +102,11 @@ title.innerText = "Catch you!"
 
 console.log(title.id);
 console.log(title.className);
+
+// element를 검색하는 방법 중 하나
+// 첫번째 element만을 가져오는 querySelector
+const hellos = document.getElementsByTagName("h1");
+const hellos2 = document.querySelector(".hello h1");
+
+console.log(hellos);
+console.log(hellos2);
